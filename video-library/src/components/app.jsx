@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
+import TitleBar from '../TitleBar/titleBar';
+import VideoPlayer from './VideoPlayer/videoPlayer';
 
-class App extends Component { state={ }
+class App extends Component { 
+    state={ }
     render() {
         return (
-            <h1>Our React App Using a Component</h1> 
+            <div className="container-fluid"> 
+            <TitleBar /> 
+            <VideoPlayer/>
+            </div>
         );
     }
  }
- 
+
 export default App;
