@@ -1,10 +1,10 @@
 import React from 'react'; 
 import ReactDOM from 'react-dom'; 
-//import App from './components/app'; 
+import App from './components/app'; 
 import 'bootstrap/dist/css/bootstrap.css'; 
-import AppEmilKevin from './components/appppp';
+//import AppEmilKevin from './components/appppp';
 
 const jsxElement = <h1>Our React App</h1>;
  console.log(jsxElement);
 
-ReactDOM.render(<AppEmilKevin />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
