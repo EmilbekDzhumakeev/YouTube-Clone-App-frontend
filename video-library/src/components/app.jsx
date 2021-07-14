@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import TitleBar from '../TitleBar/titleBar';
+import TitleBar from './TitleBar/titleBar';
 import VideoPlayer from './VideoPlayer/videoPlayer';
 import SearchBar from "../components/SearchBar/searchBar";
 
 class App extends Component { 
-    state={ }
+    state={ 
+        filter: ''
+    }
     render() {
         return (
             <div className="container-fluid"> 
