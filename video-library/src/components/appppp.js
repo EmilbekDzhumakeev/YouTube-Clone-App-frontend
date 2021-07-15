@@ -15,7 +15,7 @@ class AppEmilKevin extends Component {
     async getData() {
         try{
             let response = await axios.get(
-                "https://www.googleapis.com/youtube/v3/search?q=starwars&key=AIzaSyB01g48z-Nq63zN9W3fy_1UClauXjjPU6w"
+                "https://www.googleapis.com/youtube/v3/search?q=starwars&key=AIzaSyAACIBMXcV3cB9S7VnBOvCuLSDZU2nV0Tk"
             );
             this.setState({
                 data: response.data,
