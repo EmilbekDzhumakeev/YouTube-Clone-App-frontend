@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import TitleBar from './TitleBar/titleBar';
-//import VideoPlayer from './VideoPlayer/videoPlayer';
-import VideoPlayer from './VideoPlayer/videoPlayerTester';
+import VideoPlayer from './VideoPlayer/videoPlayer';
 import VideoList from './VideoList/videoList';
 import SearchBar from "../components/SearchBar/searchBar";
 import axios from "axios"; 
@@ -65,7 +64,7 @@ handleVideoSelect = (video) => {
             <TitleBar /> 
            
            <SearchBar handleFormSubmit={this.handleSubmit}/>
-            <VideoPlayer/>
+            <VideoPlayer video={this.state.selectedVideo}/>
             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
             </div>
         );
