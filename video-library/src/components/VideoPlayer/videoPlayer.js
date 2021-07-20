@@ -1,6 +1,7 @@
 import React from "react";
 //import App from "../app";
-import '../VideoPlayer/videoPlayer.css'
+import '../VideoPlayer/videoPlayer.css' 
+import Comments from "../Comments/comments";
 
 const VideoPlayer = ({video}) => {
   if (!video) {
@@ -21,7 +22,8 @@ return (
 
          </iframe> 
          <h4 className='ui header'>{video.snippet.title}</h4>
-     <p>{video.snippet.description}</p>
+         <p>{video.snippet.description}</p>
+     <Comments /> 
     </>
   )
 }

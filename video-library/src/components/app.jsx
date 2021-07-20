@@ -46,6 +46,7 @@ handleVideoSelect = (video) => {
                 "https://www.googleapis.com/youtube/v3/search?q=starwars&key=AIzaSyAACIBMXcV3cB9S7VnBOvCuLSDZU2nV0Tk"
             );
             //let otherResponse = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${this.state.term}`)
+            // let postResponse = await axios.post('https;//localhost:8000.com/api/comments', {videoId: '1838fjfkd', text: 'this is a comment'})
             this.setState({
                 data: response.data,
             });
@@ -62,8 +63,7 @@ handleVideoSelect = (video) => {
         return (
             <div className="container-fluid"> 
             <TitleBar /> 
-           
-           <SearchBar handleFormSubmit={this.handleSubmit}/>
+            <SearchBar handleFormSubmit={this.handleSubmit}/>
             <VideoPlayer video={this.state.selectedVideo}/>
             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
             </div>
